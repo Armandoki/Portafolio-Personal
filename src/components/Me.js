@@ -18,7 +18,7 @@ export const Me = () => {
             img: linkedin
         },
         {
-            url: 'https://www.instagram.com/4rmandoki/',
+            url: 'https://www.instagram.com/arm.doki/',
             text: 'Instagram',
             img: instagram
         }]
@@ -30,7 +30,10 @@ export const Me = () => {
                     <img src={me} alt="profile-img" />
                 </div>
                 <h1>Armando?</h1>
-                <p>Hola soy Armando, tengo {edadActual} años, actualmente estoy viviendo y estudiando en Chile, el país donde nací.</p>
+                <p>
+                    Hola, mi nombre es Armando, Ingeniero en Informática graduado de Duoc UC. Actualmente tengo {edadActual} años y resido en Chile.
+                    Mi pasión y enfoque principal radican en el desarrollo web, específicamente en el ámbito del front-end.
+                </p>
             </div>
 
             <div className="me-redes">
@@ -39,7 +42,7 @@ export const Me = () => {
 
                     {redes.map((red, indice) => (
                         <div key={indice} onClick={() => window.open(red.url, "_blank")}>
-                            <img src={red.img} alt="red"/>
+                            <img src={red.img} alt="red" />
                             <p>{red.text}</p>
                         </div>
                     ))}

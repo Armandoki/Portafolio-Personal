@@ -6,9 +6,9 @@
     --backGroundFooter: #1c1c1f;
 }
 
-* {
+/* * {
     transition: 100ms;
-}
+}*/
 
 body {
     font-family: var(--fontFamily);
@@ -124,7 +124,6 @@ a:active {
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 20px;
-
     color: var(--fontWhite);
 }
 
@@ -136,6 +135,8 @@ a:active {
     margin: 0 auto;
     border-style: solid;
     border-color: var(--hoverDark);
+    box-shadow: 0 5px 15px #00000059;
+    border-radius: calc(.5rem + 8px);
 }
 
 .me-div-img {
@@ -149,10 +150,12 @@ a:active {
     border-radius: 50%;
     border-style: solid;
     border-color: var(--hoverDark);
+    box-shadow: 0 5px 15px #0000003d;
 }
 
 .me-profile h1 {
     text-align: center;
+    text-shadow: 3px 4px 7px #000000a9;
 }
 
 .me-profile p {
@@ -171,7 +174,8 @@ a:active {
     margin: 0 auto;
     border-style: solid;
     border-color: var(--hoverDark);
-
+    box-shadow: 0 5px 15px #00000059;
+    border-radius: calc(.5rem + 8px);
     margin-top: 20px;
 }
 
@@ -179,6 +183,7 @@ a:active {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-shadow: 3px 4px 7px #000000a9;
 }
 
 .mis-redes-div {
@@ -227,6 +232,8 @@ a:active {
         padding-bottom: 10px;
         width: 100%;
         border-style: none;
+        box-shadow: none;
+        border-radius: 0px;
     }
 
     .me-redes {
@@ -250,6 +257,7 @@ a:active {
     padding-top: 30px;
     font-size: 35px;
     padding-bottom: 20px;
+    text-shadow: 3px 4px 7px #000000a9;
 }
 
 .projects-github {
@@ -263,21 +271,31 @@ a:active {
 .project-1 {
     grid-column: 1;
     grid-row: 1;
+    box-shadow: 0 5px 15px #00000059;
 }
 
 .project-2 {
     grid-column: 2;
     grid-row: 1;
+    box-shadow: 0 5px 15px #00000059;
 }
 
 .project-3 {
     grid-column: 1;
     grid-row: 2;
+    box-shadow: 0 5px 15px #00000059;
 }
 
 .project-4 {
     grid-column: 2;
     grid-row: 2;
+    box-shadow: 0 5px 15px #00000059;
+}
+
+.project-5 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    box-shadow: 0 5px 15px #00000059;
 }
 
 .projects-github div {
@@ -342,6 +360,11 @@ a:active {
         grid-column: 1;
         grid-row: 4;
     }
+
+    .project-5 {
+        grid-column: 1;
+        grid-row: 5;
+    }
 }
 
 /*Pie de Pagina ----------------------------------------------------------------------------------------------------------------------------*/
@@ -375,13 +398,19 @@ a:active {
     margin-left: 15px;
 }
 
+.footer-Armando {
+    padding-top: 10px;
+}
+
 .footer-right-redes div {
     display: inline-block;
     float: right;
     margin-left: 5px;
     margin-right: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-
 
 .footer-right-redes div img {
     height: 24px;
@@ -396,6 +425,10 @@ a:active {
     cursor: pointer;
 }
 
+.footer-right-redes div div:hover {
+    background-color: var(--hoverDark);
+}
+
 @media only screen and (max-width: 1040px) {
     .footer-pagina {
         padding-left: 3%;
@@ -403,15 +436,17 @@ a:active {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 610px) {
     .footer-right-redes p {
         display: block;
-        padding-top: 25px;
+        padding-top: 0px;
     }
 
     .footer-right-redes div {
         display: block;
         float: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .footer-right-redes div div {

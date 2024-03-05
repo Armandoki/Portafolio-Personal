@@ -2,7 +2,9 @@ import yourhighlights from '../static/img/your-highlights.jpg'
 import musicpro from '../static/img/music-pro.jpg'
 import hollow from '../static/img/hollow.jpg'
 import mytraining from '../static/img/my-training.jpg'
+import roulette from '../static/img/roulette.jpg' 
 
+import react from  '../static/icon/react.svg'
 import js from '../static/icon/js.svg'
 import css from '../static/icon/css3-alt.svg'
 import html from '../static/icon/html5.svg'
@@ -38,6 +40,12 @@ export const Projects = () => {
             url: 'https://github.com/Armandoki/Hollow',
             img: hollow,
             techs: [css, js, html, bootstrap]
+        },
+        {
+            name: 'Roulette',
+            url: 'https://github.com/Armandoki/Roulette',
+            img: roulette,
+            techs: [html, css, js, react, bootstrap]
         }
     ]
 
@@ -68,6 +76,12 @@ export const Projects = () => {
                 <div className="project-4" style={{ backgroundImage: `url(${proyectos[3].img})` }} onClick={() => window.open(proyectos[3].url, "_blank")}>
                     <h3><b>{proyectos[3].name}</b></h3>
                     {proyectos[3].techs.map((icon, indice) => (
+                        <img src={icon} alt='icon' key={indice}/>
+                    ))}
+                </div>
+                <div className="project-5" style={{ backgroundImage: `url(${proyectos[4].img})` }} onClick={() => window.open(proyectos[4].url, "_blank")}>
+                    <h3><b>{proyectos[4].name}</b></h3>
+                    {proyectos[4].techs.map((icon, indice) => (
                         <img src={icon} alt='icon' key={indice}/>
                     ))}
                 </div>

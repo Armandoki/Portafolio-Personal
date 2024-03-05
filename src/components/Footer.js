@@ -19,7 +19,7 @@ export const Footer = () => {
             img: linkedin
         },
         {
-            url: 'https://www.instagram.com/4rmandoki/',
+            url: 'https://www.instagram.com/arm.doki/',
             text: 'Instagram',
             img: instagram
         }]
@@ -47,7 +47,7 @@ export const Footer = () => {
                         </div>
                     ))}
                 </div>
-                <p>© {fecha} Armando?</p>
+                <p className='footer-Armando'>© {fecha} Armando?</p>
             </div>
         </div>
     )
